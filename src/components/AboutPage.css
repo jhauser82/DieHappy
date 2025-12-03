@@ -1,0 +1,263 @@
+.about-page {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #0f0f1e;
+  padding: 3rem 2rem;
+  color: #e0e0e0;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  border: 2px solid #2a2a3e;
+}
+
+.hero-section h1 {
+  font-family: 'Don Graffiti', sans-serif;
+  font-size: 4rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #a8b2d1;
+  line-height: 1.6;
+}
+
+.mission-section {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.mission-statement {
+  font-size: 1.3rem;
+  color: #ffffff;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.inequality-section {
+  margin-bottom: 4rem;
+}
+
+.inequality-section h2 {
+  font-size: 2.5rem;
+  color: #ff4500;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.stat-highlight {
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid #2a2a3e;
+  margin-bottom: 2rem;
+}
+
+.stat-highlight h2 {
+  font-family: 'Don Graffiti', sans-serif;
+  font-size: 3rem;
+  color: #ffd700;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-box {
+  background: rgba(255, 69, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 69, 0, 0.3);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 69, 0, 0.3);
+  border-color: #ff4500;
+}
+
+.stat-number {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ff4500;
+  margin-bottom: 0.75rem;
+}
+
+.stat-box p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.inequality-summary {
+  background: rgba(255, 69, 0, 0.1);
+  border: 2px solid rgba(255, 69, 0, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+  font-weight: 500;
+}
+
+.charts-section {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.chart-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.chart-item {
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  border-radius: 20px;
+  border: 2px solid #2a2a3e;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.chart-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+}
+
+.chart-item h2 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.tableau-container {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tableau-container iframe {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.chart-caption {
+  text-align: center;
+  color: #a8b2d1;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.fight-message {
+  font-family: 'Don Graffiti', sans-serif;
+  text-align: center;
+  color: #ff4500;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 69, 0, 0.3);
+}
+
+.disclaimer-section {
+  background: rgba(255, 193, 7, 0.1);
+  border: 2px solid rgba(255, 193, 7, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.disclaimer-section p {
+  color: #ffc107;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem;
+  }
+  
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-highlight {
+    padding: 1.5rem;
+  }
+  
+  .features-grid,
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+}

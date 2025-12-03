@@ -1,0 +1,106 @@
+.market-indicators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #0f0f1e;
+  border-bottom: 1px solid #2a2a3e;
+}
+
+.indicator-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.loading-indicators {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  color: #a8b2d1;
+}
+
+.indicator-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  border: 1px solid #2a2a3e;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.indicator-link:hover .indicator-card {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+}
+
+.indicator-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+.indicator-header h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffd700;
+  margin-bottom: 0.25rem;
+}
+
+.indicator-info {
+  font-size: 0.75rem;
+  color: #a8b2d1;
+}
+
+.indicator-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.indicator-label {
+  font-size: 0.85rem;
+  color: #a8b2d1;
+  margin-bottom: 0.75rem;
+  min-height: 1.2rem;
+}
+
+.mini-chart {
+  height: 8px;
+  background: #2a2a3e;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chart-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.sentiment-chart {
+  display: flex;
+  gap: 2px;
+}
+
+.sentiment-chart .chart-bar.bullish {
+  background: #7cb342;
+}
+
+.sentiment-chart .chart-bar.bearish {
+  background: #ef5350;
+}
+
+@media (max-width: 1200px) {
+  .market-indicators {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .market-indicators {
+    grid-template-columns: 1fr;
+  }
+}

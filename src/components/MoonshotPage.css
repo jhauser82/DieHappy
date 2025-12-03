@@ -1,0 +1,298 @@
+.moonshot-page {
+  flex: 1;
+  overflow-y: auto;
+  background: #0f0f1e;
+  padding: 2rem;
+  color: #e0e0e0;
+}
+
+.market-pulse {
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #2a2a3e;
+}
+
+.market-pulse h3 {
+  color: #ffd700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pulse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.pulse-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pulse-label {
+  font-size: 0.85rem;
+  color: #a8b2d1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pulse-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pulse-value.bullish {
+  color: #4caf50;
+}
+
+.pulse-value.trending {
+  color: #ffd700;
+}
+
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.opportunity-card {
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 2px solid #2a2a3e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.opportunity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.opportunity-card.selected {
+  border-color: #ffd700;
+  box-shadow: 0 12px 32px rgba(255, 215, 0, 0.3);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.ticker-info h3 {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 0.25rem;
+}
+
+.company-name {
+  font-size: 0.9rem;
+  color: #a8b2d1;
+}
+
+.crypto-badge {
+  display: inline-block;
+  margin-left: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background: linear-gradient(135deg, #f7931a 0%, #ffa500 100%);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 800;
+  border-radius: 12px;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+.confidence-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(30, 30, 46, 0.5);
+  border-radius: 12px;
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-item .label {
+  font-size: 0.75rem;
+  color: #a8b2d1;
+  text-transform: uppercase;
+}
+
+.price-item .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.price-item .value.target {
+  color: #4caf50;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.upside {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.upside-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #4caf50;
+}
+
+.timeframe {
+  font-size: 0.8rem;
+  color: #a8b2d1;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  color: #a8b2d1;
+  text-transform: uppercase;
+}
+
+.metric-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.expanded-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #2a2a3e;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.thesis-section,
+.catalysts-section,
+.technicals-section {
+  margin-bottom: 1.5rem;
+}
+
+.expanded-details h4 {
+  color: #ffd700;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.thesis-section p {
+  color: #a8b2d1;
+  line-height: 1.7;
+}
+
+.catalysts-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.catalysts-section li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #a8b2d1;
+  line-height: 1.6;
+}
+
+.catalysts-section li::before {
+  content: '🚀';
+  position: absolute;
+  left: 0;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  color: #a8b2d1;
+}
+
+.risk-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.disclaimer-box {
+  background: rgba(255, 193, 7, 0.1);
+  border: 2px solid rgba(255, 193, 7, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #ffc107;
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pulse-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .moonshot-page {
+    padding: 1rem;
+  }
+  
+  .pulse-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}

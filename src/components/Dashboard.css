@@ -1,0 +1,131 @@
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  overflow: hidden;
+  min-height: 700px;
+  height: 100%;
+}
+
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 1.5rem 0;
+  border-bottom: 1px solid #2a2a3e;
+  background: transparent;
+}
+
+.stock-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stock-title h2 {
+  font-size: 1.8rem;
+  color: #ffd700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.live-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.15);
+  padding: 0.35rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  letter-spacing: 1px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.stock-name {
+  font-size: 1rem;
+  color: #a8b2d1;
+}
+
+.stock-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.change {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.change.positive {
+  color: #4caf50;
+}
+
+.change.negative {
+  color: #f44336;
+}
+
+.chart-container {
+  flex: 1;
+  position: relative;
+  background: #1e1e2e;
+  min-height: 600px;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #2a2a3e;
+  border-top: 4px solid #ffd700;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-overlay p {
+  color: #a8b2d1;
+  font-size: 1rem;
+}
+
+.error-banner {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 193, 7, 0.3);
+  font-size: 0.9rem;
+}

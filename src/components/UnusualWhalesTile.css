@@ -1,0 +1,170 @@
+.whales-tile-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.whales-tile {
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #2a2a3e;
+  max-width: 1600px;
+  margin: 0 auto;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.whales-tile-link:hover .whales-tile {
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.tile-main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.tile-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 0 0 auto;
+}
+
+.tile-title h3 {
+  font-size: 1.3rem;
+  color: #ffd700;
+  margin-bottom: 0.15rem;
+  white-space: nowrap;
+}
+
+.tile-title p {
+  font-size: 0.8rem;
+  color: #a8b2d1;
+}
+
+.tile-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.tile-price .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tile-price .change {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.tile-price .change.positive {
+  color: #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.tile-price .change.negative {
+  color: #f44336;
+  background: rgba(244, 67, 54, 0.1);
+}
+
+.tile-stats {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+  border-left: 1px solid #2a2a3e;
+  border-right: 1px solid #2a2a3e;
+}
+
+.tile-stats .stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.tile-stats .label {
+  font-size: 0.7rem;
+  color: #a8b2d1;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+.tile-stats .value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tile-holdings {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tile-holdings h4 {
+  font-size: 0.75rem;
+  color: #a8b2d1;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.holdings-inline {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.holding-chip {
+  padding: 0.35rem 0.75rem;
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #667eea;
+  white-space: nowrap;
+}
+
+.holding-chip strong {
+  color: #4caf50;
+  margin-left: 0.25rem;
+}
+
+@media (max-width: 1200px) {
+  .tile-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .tile-stats {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #2a2a3e;
+    border-bottom: 1px solid #2a2a3e;
+    padding: 1rem 0;
+  }
+  
+  .tile-holdings {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tile-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .tile-stats {
+    width: 100%;
+  }
+}

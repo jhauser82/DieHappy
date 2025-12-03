@@ -1,0 +1,46 @@
+.fear-greed-gauge {
+  background: linear-gradient(135deg, #1e1e2e 0%, #252538 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #2a2a3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fear-greed-gauge h3 {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.fear-greed-gauge canvas {
+  margin: 1rem 0;
+}
+
+.gauge-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.gauge-value .value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.gauge-value .rating {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-top: 0.5rem;
+}
+
+.gauge-timestamp {
+  font-size: 0.85rem;
+  color: #a8b2d1;
+  margin-top: 1rem;
+}
